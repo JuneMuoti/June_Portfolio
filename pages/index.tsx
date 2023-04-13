@@ -16,7 +16,7 @@ export default function Home() {
   return (
   <div>
     <Head>
-      <title>June's Portifolio</title>
+      <title>June Portifolio</title>
     </Head>
 {/* <h1 className='text-blue-400'>Welcome to my Portfolio</h1> */}
  {/* Header */}
