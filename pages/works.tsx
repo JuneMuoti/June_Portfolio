@@ -43,8 +43,8 @@ export default function Works() {
         }
         const data = await response.json();
         setRepos(data);
-      } catch (error) {
-        setError(error.message);
+      } catch (e) {
+        setError(e.message);
       } finally {
         setIsLoading(false);
       }
