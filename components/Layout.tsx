@@ -3,7 +3,7 @@ import Header from './Header'
 
 type Props = {}
 
-const Layout = props => {
+const Layout = (props:Props) => {
   return (
     <div>
 <Header></Header>
