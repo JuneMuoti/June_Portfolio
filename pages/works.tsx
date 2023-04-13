@@ -2,7 +2,7 @@ import Header from '@/components/Header'
 import React from 'react'
 import { useState, useEffect } from 'react';
 import fetch from 'isomorphic-unfetch';
-
+import Image from 'next/image';
 const products = [
     {
       id: 1,
@@ -22,30 +22,12 @@ const products = [
         price: '$35',
         color: 'Black',
       },
-      {
-        id: 1,
-        name: 'Basic Tee',
-        href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
-      },
-      {
-        id: 1,
-        name: 'Basic Tee',
-        href: '#',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-        imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
-      },
+   
     // More products...
   ]
   
 type Props = {}
-
-const works = () => {
+export default function Works() {
     const [repos, setRepos] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -88,9 +70,11 @@ const works = () => {
           {repos.map((repo) => (
               <div key={repo.id} className="group relative">
                 <div className="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img
+                  <Image
                     src="/GitHub_logo.png"
-                    // alt={product.imageAlt}
+                    alt="github logo"
+                    width={500}
+                    height={500}
                     className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                   />
                 </div>
@@ -114,7 +98,7 @@ const works = () => {
   )
 }
 
-export default works
+
 
 /*
   This example requires some changes to your config:
