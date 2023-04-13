@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import Header from '@/components/Header'
+
 import Projects from '@/components/Projects'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
-import About2 from '@/components/About2'
 import Experience from '@/components/Experience'
 import Footer from '@/components/Footer'
 import Layout from '@/components/Layout'
